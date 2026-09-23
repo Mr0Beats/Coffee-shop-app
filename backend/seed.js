@@ -45,7 +45,7 @@ mongoose.connect(process.env.MONGO_URI)
     console.log('Підключено до БД. Додаємо товари...');
     await Product.deleteMany({});
     await Product.insertMany(sampleProducts);
-    console.log('✅ Успіх! 5 товари додано в меню.');
+    console.log('Успіх! 5 товари додано в меню.');
     process.exit();
   })
   .catch(err => {
